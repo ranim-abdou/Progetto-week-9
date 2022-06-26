@@ -23,15 +23,19 @@ class Smartphone {
     }
     set nome(nome) {
         this._nome = nome;
+        console.log("Utente");
     }
     set ricarica(ricarica) {
         this._ricarica = ricarica;
+        console.log("Ricarica avvenuta!");
     }
     set minuti(minuti) {
         this._minuti = minuti;
+        console.log("Durata della chiamata");
     }
     set chiamate(chiamate) {
         this.chiamate = chiamate;
+        console.log("chiamate effetutate");
     }
     Ricarica(Ricarica) {
         this._ricarica = Ricarica;

@@ -26,15 +26,19 @@ class Smartphone {                    //classe smartphone
 
     set nome(nome:string) {
         this._nome = nome
+        console.log("Utente")
     }
     set ricarica(ricarica:number) {
         this._ricarica = ricarica
+        console.log("Ricarica avvenuta!")
     }
     set minuti(minuti:number) {
         this._minuti = minuti 
+        console.log("Durata della chiamata")
     }
     set chiamate(chiamate:number) {
         this.chiamate = chiamate
+        console.log("chiamate effetutate")
     }
 
     public Ricarica(Ricarica:number): void {
@@ -62,6 +66,7 @@ class Smartphone {                    //classe smartphone
 let utente1 = new Smartphone("Mario", 10, 0, 0);
 let utente2 = new Smartphone("Maria", 10, 0, 0);
 let utente3 = new Smartphone("Genoveffa", 10, 0, 0);
+
 
 
 
