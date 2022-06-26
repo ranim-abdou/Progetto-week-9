@@ -1,9 +1,9 @@
 "use strict";
 class Smartphone {
     constructor(nome, ricarica, minuti, chiamate) {
-        this._ricarica = 10;
-        this._minuti = 0;
-        this._chiamate = 0;
+        this._ricarica = 10; // ricarica credito
+        this._minuti = 0; // durata in minuti
+        this._chiamate = 0; // numero chiamate
         this._nome = nome;
         this._ricarica = ricarica;
         this._minuti = minuti;
@@ -47,11 +47,13 @@ class Smartphone {
         this._minuti = 0;
         this._ricarica = 0;
     }
+    //const price:number = 0.20;
     numero404() {
         this._ricarica - this._minuti * 0.2;
         return (this._ricarica - this._minuti * 0.2);
     }
 }
+// utenti
 let utente1 = new Smartphone("Mario", 10, 0, 0);
 let utente2 = new Smartphone("Maria", 10, 0, 0);
 let utente3 = new Smartphone("Genoveffa", 10, 0, 0);
